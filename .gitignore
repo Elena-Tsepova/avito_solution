@@ -1,0 +1,20 @@
+# Тяжёлые пересобираемые кэши — не коммитим (см. README: prep/embeddings/retrieval их строят сами).
+cache/
+out/*.pkl
+out/*.npy
+out/*npz
+out/__pycache__/
+__pycache__/
+*.pyc
+*.log
+
+# Сами данные бенчмарка лежат рядом (dataset_extract/) и в репозиторий не попадают.
+*.parquet
+*.npz
+*.npy
+*.pkl
+*.npy.md5
+
+# Оставляем в git только код, README и сам ответ.
+!out/answer.csv
+!README.md
